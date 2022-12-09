@@ -14,7 +14,7 @@ body{
     /* background-color: #812b2b;
     background-color: #095463; */
     background-color: #dfb6b6;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,7 +136,7 @@ body{
 }
 .common_timer_container{
     z-index: 2;
-    margin: 1em 0;
+    margin: 0.70em 0;
     display: flex;
     align-items: center;
     justify-content: center;
