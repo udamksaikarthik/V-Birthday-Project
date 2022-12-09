@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Tangerine";
+    /* src: url('Fonts/Tangerine-Regular.ttf'); */
+    src: url('Fonts/Tangerine-Bold.ttf');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Tangerine";
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #812b2b;
+    background-color: #095463;
+    background-color: #dfb6b6;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75em;
+}
+.main_body_container{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border: 2px dashed #812b2b;
+}
+.left_top_bird,.right_top_bird,.right_bottom_bird,.left_bottom_bird{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    background: url('Images/love-bird.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.left_top_bird{
+    rotate: 80deg;
+}
+.right_top_bird{
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+    rotate: -80deg;
+}
+.right_bottom_bird{
+    bottom: 0;
+    right: 0;
+    transform: rotateY(180deg);
+}
+.left_bottom_bird{
+    bottom: 0;
+    left: 0;
+    rotate: -10deg;
+}
+.content_main_container{
+    padding: 3% 5%;
+}
+.content_section span{
+    font-weight: bold;
+}
+.footer_section{
+    text-align: right;
+}
+.dearest_section,.footer_section{
+    height: 10%;
+}
+.content_section{
+    height: 50%;
+}
+.magic_animation_section{
+    position: relative;
+    height: 30%;
+}
+.left_half_heart{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 50%;
+    top: 0;
+    background: url('Images/left_heart.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: ease-in-out 1s;
+}
+.loves_section_div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loves_section_div h3{
+    background-color: #f44336;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.right_half_heart{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background: url('Images/right_heart.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: ease-in-out 1s;
+}
+.right_half_heart.move{
+    transform: translateX(25%);
+
+}
+.left_half_heart.move{
+    transform: translateX(-25%);
+}
+.hyper_a{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.loader_timer_container{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #095463;
+    font-size: 1.25em;
+}
+.common_timer_container{
+    z-index: 2;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.common_timer_container h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ballons{
+    background: url('Images/balloons.png');
+    top: 10px;
+    left: 25px;
+}
+.ballons_1{
+    background: url('Images/balloons\(1\).png');
+    top: 25px;
+    right: 10px;
+}
+.ballons_2{
+    background: url('Images/balloons\(2\).png');
+    bottom: 0;
+    left: 0;
+}
+.cake{
+    background: url('Images/wedding-cake.png');
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.birthday_icons{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media screen and (max-width: 500px){
+    .left_top_bird,.right_top_bird,.right_bottom_bird,.left_bottom_bird{
+        height: 50px;
+        width: 50px;
+    }
+    body{
+        font-size: 1.20em;
+    }
+}
