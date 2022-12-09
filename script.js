@@ -4,6 +4,7 @@ const secs_div_id = document.getElementById('secs_div_id')
 const mins_div_id = document.getElementById('mins_div_id')
 
 
+
 function timerCounter(){
     let currentDate = new Date()
     const birthdayDate = new Date('2022-12-19 23:59:59');
