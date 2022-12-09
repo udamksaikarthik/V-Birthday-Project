@@ -125,8 +125,8 @@ body{
 }
 .loader_timer_container{
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,8 +157,9 @@ body{
 }
 .ballons_2{
     background: url('Images/balloons\(2\).png');
-    bottom: 0;
-    left: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .cake{
     background: url('Images/wedding-cake.png');
@@ -181,5 +182,8 @@ body{
     }
     body{
         font-size: 1.20em;
+    }
+    .common_timer_container{
+        margin: 0.5em 0;
     }
 }
