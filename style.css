@@ -14,12 +14,20 @@ body{
     width: 100vw;
     /* background-color: #812b2b;
     background-color: #095463; */
-    background-color: #dfb6b6;
     /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.75em;
+}
+.parent_main_container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #dfb6b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main_body_container{
     position: relative;
