@@ -7,7 +7,7 @@ const mins_div_id = document.getElementById('mins_div_id')
 
 function timerCounter(){
     let currentDate = new Date()
-    const birthdayDate = new Date('2022-12-19 23:59:59');
+    const birthdayDate = new Date('2022-12-18 23:59:59');
 
     console.log('Date: ',currentDate.getDate())
     console.log('Month: ',currentDate.getMonth() + 1)
