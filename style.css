@@ -5,7 +5,7 @@
 }
 *{
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     font-family: "Tangerine";
 }
 body{
@@ -13,8 +13,8 @@ body{
     height: 100vh;
     width: 100vw;
     /* background-color: #812b2b;
-    background-color: #095463; */
-    overflow: hidden; 
+    background-color: #095463; 
+    overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
