@@ -29,7 +29,7 @@ function timerCounter(){
 setInterval(() => {
     timerCounter()
 }, 1000);
-
+ 
 
 
 const main_body_container_id = document.getElementById('main_body_container_id')
