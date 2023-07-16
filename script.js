@@ -21,9 +21,9 @@ function timerCounter(){
         loader_timer_container_id.style.display = 'none'
     }
     days_div_id.innerText = Math.round((birthdayDate.getTime()-currentDate.getTime())/ (1000 * 60 * 60 * 24))
-    hours_div_id.innerText = birthdayDate.getHours()-currentDate.getHours()
-    mins_div_id.innerText = birthdayDate.getMinutes() - currentDate.getMinutes()
-    secs_div_id.innerText = birthdayDate.getSeconds()-currentDate.getSeconds()
+    hours_div_id.innerText = Math.round((((birthdayDate.getTime()-currentDate.getTime())/ (1000))/( 60 * 60 )))
+    mins_div_id.innerText = Math.round((((birthdayDate.getTime() - currentDate.getTime())/1000)/60))
+    secs_div_id.innerText = Math.round((birthdayDate.getTime()-currentDate.getTime())/ (1000))
 }
 
 setInterval(() => {
